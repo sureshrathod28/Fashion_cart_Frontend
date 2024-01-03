@@ -66,7 +66,7 @@ const Cart = () => {
   }, [cartData]);
   return (
     <>
-     <Navbar expand="lg" style={{maxHeight:'80px'}} className="bg-body-tertiary">
+     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#"><img style={{width:"60px",height:"60px"}} src={logo} alt="logo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -88,14 +88,7 @@ const Cart = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button className='search-btn' variant="outline-success" style={{width:"200px",height:"58px"}}>Search</Button>
+          <Form className="none d-flex">
             <img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" style={{height:"60px", width:"60px"}} alt="cart" />
             <span className="cart-length" style={{fontSize:"2.5rem",color:"green"}}>{cartData.length}</span>
           </Form>

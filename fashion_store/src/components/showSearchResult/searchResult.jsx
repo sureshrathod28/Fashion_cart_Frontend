@@ -37,7 +37,7 @@ const SearchResults = () => {
   return (
     <div>
       <div>
-      <Navbar expand="lg" style={{maxHeight:'80px'}} className="bg-body-tertiary">
+      <Navbar expand="lg"  className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#"><img style={{width:"60px",height:"60px"}} src={logo} alt="logo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -75,6 +75,7 @@ const SearchResults = () => {
     </Navbar>
       </div>
       <div className="show-container">
+        {/* Display search results as cards */}
         {searchResults.map((result,index) => (
           <div key={index} className="show-card">
             <p><b>{result.title}</b></p>
