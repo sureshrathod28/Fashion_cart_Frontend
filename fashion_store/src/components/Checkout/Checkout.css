@@ -1,0 +1,37 @@
+.bill-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 15px ;
+  }
+  
+  .bill h3 {
+    color: #333;
+  }
+  
+  .bill ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bill li {
+    margin-bottom: 10px;
+  }
+  
+  .offer {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .total {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
